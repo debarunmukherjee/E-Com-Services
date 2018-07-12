@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>E-Com Forums</title>
+        <meta charset="utf-8">
+        <meta name="description" content="E-Com service is an online shopping company which sells a varied range of products. This is the company's online forum page">
+        <link rel="stylesheet" type="text/css" href="Vendors/CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/CSS/grid.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/CSS/ionicons.min.css">
+        <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Resourses/CSS/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="Resourses/Images/Webp.net-resizeimage.png">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <img src="Resourses/Images/Webp.net-resizeimage.png" alt="logo" class="logo">
+                    <h1 class="company-name">E-COM SERVICES</h1>
+                    
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="search-bar">
+                        <i class="ion-ios-search"></i>
+                        <input type="text" name="search-item" placeholder="Search Forum">
+                    </div>
+                </div>
+            </div>
+            <div class="row nav-log">
+                <div class="col span-1-of-2">
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="log-in">
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="main-question">
+            <div class="row">
+                <div class="col span-4-of-7">
+                    <div class="row">
+                        <div class="col span-1-of-10 title">
+                            Title
+                        </div>
+                        <div class="col span-9-of-10">
+                            <input type="text" class="title-text">
+                        </div>
+                    </div>
+                    
+                    <div class="row details">
+                        <textarea name="content" id="editor"></textarea>
+                        <script>
+                            ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .then( editor => {
+                                    console.log( editor );
+                                } )
+                                .catch( error => {
+                                    console.error( error );
+                                } );
+                        </script>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-10 tags">
+                            Tags
+                        </div>
+                        <div class="col span-9-of-10">
+                            <input type="text" class="tag-text">
+                        </div>
+                    </div>
+                    
+                    <div class="row post-button">
+                        <a href="#" class="btn btn-full">Ask Question</a>
+                    </div>
+                </div>
+                
+                <div class="col span-3-of-7 instructions">
+                    <p>For the best results please note the  following points before posting your query.</p>
+                    <br>
+                    <ul class="points-to-note">
+                        <li>We prefer questions that can be answered, not just discussed.</li>
+                        <li>Provide details. Share your research.</li>
+                        <li>First time here? Please check out our <a href="#">Guidelines</a> and <a href="#">FAQ</a> sections.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2015 by E-Com Services. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
